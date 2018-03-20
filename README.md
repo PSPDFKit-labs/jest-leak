@@ -1,6 +1,6 @@
 ## Jest Leak
 
-This repo is used to reproduce a memory leak in Jest that was introduced between [v22.2.2 and v22.3.0](https://github.com/facebook/jest/compare/v22.2.2...v22.3.0).
+This repo is used to reproduce a [memory leak](https://github.com/facebook/jest/issues/5837) in Jest that was introduced between [v22.2.2 and v22.3.0](https://github.com/facebook/jest/compare/v22.2.2...v22.3.0).
 
 The test case inside `__tests__` will require a very large JavaScript file which will only work when babel transpiling is turned off for this file (in this case, the JavaScript file is an auto-generated asm.js file from the latest [PSPDFKit](https://pspdfkit.com/web) version). 
 
